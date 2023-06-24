@@ -15,3 +15,6 @@ If you want the rewind to be, say, 2x faster than the recording, divide the snap
 4) If you wish, use PauseRewind() to stop rewinding, like you would on a VCR. Any frames that were rewound will have been removed, allowing you to make a new "timeline" of events.
 
 5) If you wish, use the DisableMotion() and EnableMotion() to freeze the target. May be useful if you want to pause the rewind but keep a player frozen for a bit.
+
+
+If you use this in a map, please put my name in the description! Also send me a message about it (so I can see all the wild ideas people could use this for :) ).
