@@ -5,7 +5,7 @@ snaps_angles <- []
 snapshot_timer <- ""
 rewind_timer <- ""
 frame <- 0
-target <- null
+target <- "!player"
 
 const MAX_MEMORY_ALLOWANCE = 100000000 // In bytes. Default: 100,000,000 (100mb)
 
@@ -37,7 +37,7 @@ function AcquireTarget(targetname) {
 }
 
 function StartSnapshot(delay) {
-	if(target == null) {
+	if(target == "!player" || target == GetPlayer()) {
 		target = GetPlayer()
 		printl("Snapshotting player")
 	} else {
